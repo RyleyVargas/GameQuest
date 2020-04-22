@@ -11,7 +11,7 @@ from sprites import *
 
 class Game:
     def __init__(self):
-        # initialize game window, etc
+        # this starts the game window 
         pg.init()
         pg.mixer.init()
         self.screen = pg.display.set_mode((WIDTH, HEIGHT))
@@ -19,7 +19,7 @@ class Game:
         self.clock = pg.time.Clock()
         self.running = True
     def new(self):
-        # start a new game
+        # this part shiuld start a new game to play
         self.all_sprites = Group()
         self.platforms = Group()
         self.monsters = Group()
